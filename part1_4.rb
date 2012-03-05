@@ -19,7 +19,7 @@ class JellyBean < Dessert
 		@flavor = flavor
 	end
 	def delicious?
-		return false if @flavour.eql?("black licorice")
+		return false if @flavor.downcase.eql?("black licorice")
 		true
 	end
 end
